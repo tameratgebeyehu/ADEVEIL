@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "ADEVeil",
+    "slug": "adeveil",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "adeveil",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#0A0A0F",
+    "splash": {
+      "backgroundColor": "#0A0A0F",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.adeveil.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0F"
+      },
+      "package": "com.adeveil.app",
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
