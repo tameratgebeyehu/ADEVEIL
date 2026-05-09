@@ -7,7 +7,9 @@
     "scheme": "adeveil",
     "userInterfaceStyle": "automatic",
     "backgroundColor": "#0A0A0F",
+    "icon": "./assets/adeveil_logo.png",
     "splash": {
+      "image": "./assets/adeveil_logo.png",
       "backgroundColor": "#0A0A0F",
       "resizeMode": "contain"
     },
@@ -17,6 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adeveil_logo.png",
         "backgroundColor": "#0A0A0F"
       },
       "package": "com.adeveil.app",
@@ -24,10 +27,31 @@
     },
     "plugins": [
       "expo-router",
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-screen-capture",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow ADEVeil to use the camera to scan QR codes."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow ADEVeil to use Face ID for authentication."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4f67b5ba-d0e5-4f52-a380-b7cc2df8bbad"
+      }
     }
   }
 }
